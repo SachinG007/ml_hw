@@ -68,7 +68,7 @@ class _DropoutClassifier(nn.Module):
 params = {'model': 'dclf',
           'display_step': 1000, # Do not decrease this, can make the training extremelly slow.
           'batch_size': 256,
-          'iterations': 100000,
+          'iterations': 1000,
           'initial_lr': 0.1,
           'lr_decay': 0.5,
           'adjust_lr_step': 10000,
