@@ -85,7 +85,7 @@ params = {'model': 'dclf',
           'input_dropout_prob': 0.5,
           'output_l2_decay': 0.03,
           'hidden_layers': [1024, 1024, 2048],
-          'hidden_dropout_prob': 0.2,  #TODO: change this parameter
+          'hidden_dropout_prob': 0.0,  #TODO: change this parameter
           'hidden_activation': 'relu',
           'random_seed': 42}
 
@@ -307,6 +307,7 @@ def main():
 
     clf = DropoutClassifier(params)
     print(clf.device)
+    print(clf.params['hidden_dropout_prob'])
     clf.fit(insample_dataloader, outsample_dataloader)
     
     # To avoid unnecesary pain, we recommend you to save your classifiers
