@@ -85,7 +85,7 @@ params = {'model': 'dclf',
           'input_dropout_prob': 0.5,
           'output_l2_decay': 0.03,
           'hidden_layers': [1024, 1024, 2048],
-          'hidden_dropout_prob': 0.5,  #TODO: change this parameter
+          'hidden_dropout_prob': 0.8,  #TODO: change this parameter
           'hidden_activation': 'relu',
           'random_seed': 42}
 
